@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This website is for chaima</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function navrestyle1() {
+        var element = document.getElementById("nav1");
+        element.classList.add("navrestyle");
+        var element2 = document.getElementById("nav2");
+        element2.classList.remove("navrestyle");
+        var element3 = document.getElementById("nav3");
+        element3.classList.remove("navrestyle");
+        var element4 = document.getElementById("nav4");
+        element4.classList.remove("navrestyle");
+      }
+      function navrestyle2() {
+        var element = document.getElementById("nav2");
+        element.classList.add("navrestyle");
+        var element3 = document.getElementById("nav3");
+        element3.classList.remove("navrestyle");
+        element3.style.display = "block";
+        var element1 = document.getElementById("nav1");
+        element1.classList.remove("navrestyle");
+        var element4 = document.getElementById("nav4");
+        element4.classList.remove("navrestyle");
+      }
+      function navrestyle3() {
+        var element = document.getElementById("nav3");
+        element.classList.add("navrestyle");
+        var element2 = document.getElementById("nav2");
+        element2.classList.remove("navrestyle");
+        var element1 = document.getElementById("nav1");
+        element1.classList.remove("navrestyle");
+        var element4 = document.getElementById("nav4");
+        element4.classList.remove("navrestyle");
+        element4.style.display = "block";
+      }
+      function navrestyle4() {
+        var element = document.getElementById("nav4");
+        element.classList.add("navrestyle");
+        var element2 = document.getElementById("nav2");
+        element2.classList.remove("navrestyle");
+        var element1 = document.getElementById("nav1");
+        element1.classList.remove("navrestyle");
+        var element3 = document.getElementById("nav3");
+        element3.classList.remove("navrestyle");
+      }
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <div class="preloader">
+    <div class="preloaderdiv"></div>
+    <div class="preloadertext">
+      Wait until we create someting beautiful like you
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="navitems navrestyle" id="nav1">
+      <a onclick="navrestyle1()" href="#div1"><strong>FIRST LINK</strong></a>
+    </div>
+    <div class="navitems" id="nav2">
+      <a onclick="navrestyle2()" href="#div2"><strong>SECOND LINK</strong></a>
+    </div>
+    <div
+      class="navitems animate__animated animate__fadeInUp"
+      id="nav3"
+      style="display: none"
+    >
+      <a onclick="navrestyle3()" href="#div3"><strong>THIRD LINK</strong> </a>
+    </div>
+    <div
+      class="navitems animate__animated animate__fadeInUp"
+      id="nav4"
+      style="display: none"
+    >
+      <a onclick="navrestyle4()"><strong>FOURTH LINK</strong> </a>
+    </div>
+  </nav>
+  <body>
+    <div class="welcomediv" onmouseover="navrestyle1()" id="div1">
+      <p class="wlc animate__animated animate__fadeIn">FROM THE HEART,</p>
+      <p class="intro animate__animated animate__fadeIn">
+        I present to you this art
+      </p>
+    </div>
+    <div class="divs" onmouseover="navrestyle2()" id="div2">
+      <div class="leftimgdiv2">
+        <img class="imgdiv2" src="images/leftimgstart.jpg" alt="leftimg" />
+      </div>
+      <div class="righttextdiv2">
+        <p class="textdiv2">IT ALL STARTED HERE!</p>
+        <a href="#ban1"><button class="btndiv2">Oh yeah!</button></a>
+      </div>
+    </div>
+    <div class="bannerdiv animate__animated animate__fadeIn" id="ban1">
+      <p class="ban1text">
+        OUR RELATION STARTED 3 YEARS AND A HALF AGO, AND WE WILL BE SPENDING
+        <br />
+        THE REST OF OUR LIVES TOGETHER
+      </p>
+      <div class="ban1imgs">
+        <img class="ban1imgback" src="images/ban1-1.jpg" />
+        <img class="ban1imgback" src="images/ban1-2.jpg" />
+        <img class="ban1imgback" src="images/ban1-3.jpg" />
+        <img class="ban1imgback" src="images/ban1-4.jpg" />
+        <img class="ban1imgback" src="images/ban1-5.jpg" />
+      </div>
+    </div>
+    <div class="divs" onmouseover="navrestyle3()" id="div3">
+      <div class="lefttextdiv3">
+        <p class="textdiv3">
+          And here we are now!
+          <br />Engaged!
+        </p>
+        <a href="#title4"><button class="btndiv3">UH, so whats next?</button></a>
+      </div>
+
+      <div class="rightimgdiv3">
+        <img class="imgdiv3" src="images/div3.jpg" alt="leftimg" />
+      </div>
+    </div>
+    <div class="divs" onmouseover="navrestyle4()" id="div4">
+      <div class="textboxdiv4" id="title4">
+        <h1 class="titlediv4">The reason why I created this website:</h1>
+        <p class="textdiv4">
+          As a first reason, I created this website because i love you. Secondly,
+          it appears that today is 14 february, so as I am unable to gift you
+          something valuable, I created this website to gift it to you. It is
+          really silly to tell such a queen like you only love you when it is
+          valentines day, queens like you should receive an everyday love you. I
+          want to thank you for being in my life , for being my life, for
+          supporting me in my hardest times, whenever i felt weak and useless,
+          you believed in me and made me reach what i am now , i really realised
+          in these days that i am really without you , i hope i do well to
+          deserve you Hoping from god to protect you from anyhting that can hurt
+          you baby. I love you to the moon and never back.
+        </p>
+        <br>
+        <a href="#div5"><button class="btndiv4">Magic!</button></a>
+      </div>
+    </div>
+    <div  id="div5">
+        <p class="textboxdiv5">
+            In this occasion i want to tell you ,
+            <br>
+            You are my forever, you are my sunshine,
+            <br>
+            Everytime i think about you i feel fine,
+            <br>
+            You are more addictive than wine,
+            <br>
+            I pray to god to see you one more time,
+            <br>
+            You are my full day and my everytime,
+            <br>
+            I hope with this poem i can make you mine
+            <br>
+            So , would you be mine?
+        </p>
+        <img src="images/div5.jpg" class="div5img" alt="hob">
+    </div>
+    <script>
+      $(window).on("load", function () {
+        $(".preloader").fadeOut(5000);
+        $("body").fadeIn(5000);
+      });
+    </script>
+  </body>
+</html>
