@@ -54,6 +54,7 @@
         element3.classList.remove("navrestyle");
       }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.0/sweetalert2.all.js" integrity="sha512-mEdS3H2V6RWzMLyx/WPZiC2EQnIWjqSBT5m/D8kEdRtUrg0Qi7sBdcAtCg0dCu4G4Nv3g/V/3J4DIu4j/u/nAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -61,6 +62,10 @@
       referrerpolicy="no-referrer"
     ></script>
   </head>
+  <audio autoplay loop>
+    <source src="audio/Happier - Marshmello ft. Bastille - Violin cover.mp3" type="audio/mpeg">
+    <source src="audio/Happier - Marshmello ft. Bastille - Violin cover.mp3" type="audio/ogg">
+</audio>
   <div class="preloader">
     <div class="preloaderdiv"></div>
     <div class="preloadertext">
@@ -90,6 +95,7 @@
     </div>
   </nav>
   <body>
+    
     <div class="welcomediv" onmouseover="navrestyle1()" id="div1">
       <p class="wlc animate__animated animate__fadeIn">FROM THE HEART,</p>
       <p class="intro animate__animated animate__fadeIn">
@@ -134,13 +140,14 @@
     </div>
     <div class="divs" onmouseover="navrestyle4()" id="div4">
       <div class="textboxdiv4" id="title4">
+      <div class="innerdiv4">
         <h1 class="titlediv4">The reason why I created this website:</h1>
         <p class="textdiv4">
-          As a first reason, I created this website because i love you. Secondly,
+          As a first reason, I created this website because i love you. <br>Secondly,
           it appears that today is 14 february, so as I am unable to gift you
-          something valuable, I created this website to gift it to you. It is
+          something valuable, I created this website to gift it to you. <br>It is
           really silly to tell such a queen like you only love you when it is
-          valentines day, queens like you should receive an everyday love you. I
+          valentines day, queens like you should receive an everyday love you.<br> I
           want to thank you for being in my life , for being my life, for
           supporting me in my hardest times, whenever i felt weak and useless,
           you believed in me and made me reach what i am now , i really realised
@@ -149,10 +156,12 @@
           you baby. I love you to the moon and never back.
         </p>
         <br>
-        <a href="#div5"><button class="btndiv4">Magic!</button></a>
+        <a href="#div5"><button class="btndiv4">Poem!</button></a>
+      </div>
       </div>
     </div>
     <div  id="div5">
+        
         <p class="textboxdiv5">
             In this occasion i want to tell you ,
             <br>
@@ -169,10 +178,36 @@
             I hope with this poem i can make you mine
             <br>
             So , would you be mine?
+            <br>
+            <button class="div5btn" id="lastbtn">YES!</button>
+
         </p>
+        
         <img src="images/div5.jpg" class="div5img" alt="hob">
+        
     </div>
     <script>
+        document.getElementById("lastbtn").addEventListener('click',function(){
+            swal.fire(
+              {title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes!',
+            cancelButtonText: 'Yes, But in Red!'}
+            ).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                title:'We are married now!',
+                icon:'success',
+                html:'You can explore our photos for 3 years '+'<a href="https://drive.google.com/drive/folders/1AOaIwb2NO4wBvEgjiHn_1eAu-1ozo5iR?usp=sharing" target="_blank">here</a>' 
+            })
+            }
+            })
+            ;
+        })
       $(window).on("load", function () {
         $(".preloader").fadeOut(5000);
         $("body").fadeIn(5000);

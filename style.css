@@ -48,6 +48,7 @@ body::-webkit-scrollbar {
   }
 }
 .navbar {
+    z-index: 999;
   position: fixed;
   top: 0%;
   left: 0%;
@@ -175,6 +176,11 @@ body::-webkit-scrollbar {
   align-items: center;
   font-weight: bold;
 }
+.btndiv2:hover{
+transition: ease-in 0.25s;
+background-color: #ffffff;
+color: black;
+}
 .lefttextdiv3 {
   background: #b667f1;
   width: 60%;
@@ -199,6 +205,11 @@ body::-webkit-scrollbar {
   background: transparent;
   cursor: pointer;
   margin-top: 15px;
+}
+.btndiv3:hover{
+transition:ease-in 0.25s;
+background-color: #ffffff;
+color: black;
 }
 .imgdiv3 {
   z-index: -100;
@@ -253,9 +264,9 @@ body::-webkit-scrollbar {
   padding: 0%;
 }
 .textboxdiv4{
-    width: 100%;
-    
-    background-color: #ffa2eb;
+    background-image: url('images/backdiv4.jpg');
+    background-size: cover;
+    width: 100%;    
     align-items: center;
     justify-items: center;
     align-content: center;
@@ -272,8 +283,16 @@ body::-webkit-scrollbar {
 }
 .textdiv4{
     font-size: 30px;
-    color: #ffffff;
-    margin-bottom: 0%
+    color: #000000;
+    margin-bottom: 0%;
+    
+}
+.innerdiv4{
+    background-color: #ffffff62;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding: 0%;
 }
 .btndiv4{
     width:200px;
@@ -285,6 +304,11 @@ body::-webkit-scrollbar {
     margin: 80px 40%;
     font-size: 20px;
 }
+.btndiv4:hover{
+transition: ease-in 0.25s;
+background-color: #ffffff;
+color: black;
+}
 #div5{
     display: flex;
     flex-direction: row;
@@ -292,7 +316,7 @@ body::-webkit-scrollbar {
 }
 .textboxdiv5{
     width: 60%;
-    height: 300px;
+    height: 320px;
     color: #ffffff;
     background-color: black;
     font-size: 30px;
@@ -307,5 +331,22 @@ body::-webkit-scrollbar {
 }
 .div5img{
     width: 40%;
-    height: 320px;
+    height: 340px;
+}
+.div5btn{
+    background: transparent;
+    border: #ffffff solid 1px;
+    color: #ffffff;
+    padding: auto;
+    margin-top: -15px ;
+    margin-left: 50vw ;
+    text-decoration: none;
+    width:80px;
+    height:40px;
+    cursor: pointer;
+}
+.div5btn:hover{
+    transition: ease-in 0.25s;
+    background-color: #f2f2f2;
+    color: black;
 }
