@@ -54,6 +54,7 @@
         var element3 = document.getElementById("nav3");
         element3.classList.remove("navrestyle");
       }
+     
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.0/sweetalert2.all.js" integrity="sha512-mEdS3H2V6RWzMLyx/WPZiC2EQnIWjqSBT5m/D8kEdRtUrg0Qi7sBdcAtCg0dCu4G4Nv3g/V/3J4DIu4j/u/nAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script
@@ -63,10 +64,6 @@
       referrerpolicy="no-referrer"
     ></script>
   </head>
-  <audio autoplay loop>
-    <source src="audio/Happier - Marshmello ft. Bastille - Violin cover.mp3" type="audio/mpeg">
-    <source src="audio/Happier - Marshmello ft. Bastille - Violin cover.mp3" type="audio/ogg">
-</audio>
   <div class="preloader">
     <div class="preloaderdiv"></div>
     <div class="preloadertext">
@@ -96,6 +93,10 @@
     </div>
   </nav>
   <body>
+    
+  <audio id="my_audio" autoplay loop>
+    <source src="audio/Happier - Marshmello ft. Bastille - Violin cover.mp3" type="audio/mpeg"> 
+  </audio>
     
     <div class="welcomediv" onmouseover="navrestyle1()" id="div1">
       <p class="wlc animate__animated animate__fadeIn">FROM THE HEART,</p>
@@ -212,6 +213,7 @@
       $(window).on("load", function () {
         $(".preloader").fadeOut(5000);
         $("body").fadeIn(5000);
+        $("#my_audio").play();
       });
     </script>
   </body>
